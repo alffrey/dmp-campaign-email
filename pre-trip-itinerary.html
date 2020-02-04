@@ -197,13 +197,13 @@
     </style>
     <style type="text/css">
         /* .option_1 {
-            display: none;
+            display: block;
         }
         .option_2 {
             display: none;
         }
         .option_3 {
-            display: block;
+            display: none;
         }
         .option_4 {
             display: none;
@@ -239,6 +239,7 @@
             line-height: inherit !important
         }
 
+        /* Non Mobile devices */
         @media (min-width: 630px) {
             .two-column-container {
                 max-width: 100% !important
@@ -255,8 +256,17 @@
             .two-column.cfm .column.cfm-figure {
                 max-width: 10% !important
             }
+
+            .day-vertical-align {
+                vertical-align: middle;
+            }
+
+            .time-align {
+                text-align: right;
+            }
         }
 
+        /* Mobile devices */
         @media (max-width: 629px) {
             .calendar td {
                 font-size: 16px !important
@@ -337,6 +347,14 @@
 
             .m-l-t {
                 text-align: left !important;
+            }
+
+            .day-vertical-align {
+                vertical-align: top;
+            }
+
+            .time-align {
+                text-align: left;
             }
 
             .deviceWidth {
@@ -713,8 +731,7 @@
                                                                                 <tr>
                                                                                     <td class="p-t-2 p-b-1"
                                                                                         style="padding-bottom: 18px; padding-top: 18px; border-collapse: collapse; text-align: center; font-size: 0; border-top: 1px solid #cccccc;">
-                                                                                        <div class="column column-pod a-top"
-                                                                                            style="vertical-align: top;">
+                                                                                        <div class="column column-pod a-top">
                                                                                             <table align="center"
                                                                                                 border="0"
                                                                                                 cellpadding="0"
@@ -726,7 +743,7 @@
                                                                                                 <tbody>
                                                                                                     <tr>
                                                                                                         <td style="border-collapse: collapse; width: 52px; padding-right: 5px;"
-                                                                                                            valign="middle">
+                                                                                                            class="day-vertical-align">
                                                                                                             <table
                                                                                                                 align="left"
                                                                                                                 border="0"
@@ -758,8 +775,8 @@
                                                                                                                     <tr
                                                                                                                         class="caDesc">
                                                                                                                         <td align="left"
-                                                                                                                            class="f-body-small c-medium f-w-light"
-                                                                                                                            style="border-collapse: collapse; margin: 0px; font-size: 16px; text-align: right; line-height: 20px; color: #595959; font-family: Roboto, Google Sans, Arial, sans-serif; font-weight: 300;">
+                                                                                                                            class="f-body-small c-medium f-w-light time-align"
+                                                                                                                            style="border-collapse: collapse; margin: 0px; font-size: 16px; line-height: 20px; color: #595959; font-family: Roboto, Google Sans, Arial, sans-serif; font-weight: 300;">
                                                                                                                             3
                                                                                                                             PM
                                                                                                                         </td>
@@ -857,7 +874,7 @@
                                                                                             <tbody>
                                                                                                 <tr>
                                                                                                     <td style="border-collapse: collapse; width: 52px; padding-right: 5px;"
-                                                                                                        valign="middle">
+                                                                                                        class="day-vertical-align">
                                                                                                         <table
                                                                                                             align="left"
                                                                                                             border="0"
@@ -887,8 +904,8 @@
                                                                                                                 <tr
                                                                                                                     class="caDesc">
                                                                                                                     <td align="left"
-                                                                                                                        class="f-body-small c-medium f-w-light"
-                                                                                                                        style="border-collapse: collapse; margin: 0px; font-size: 16px; text-align: right; font-family: Roboto, 'Google Sans', Arial, sans-serif; font-weight: 300; border: 0px none #595959; background-color: #ffffff; line-height: 20px; color: #595959;">
+                                                                                                                        class="f-body-small c-medium f-w-light time-align"
+                                                                                                                        style="border-collapse: collapse; margin: 0px; font-size: 16px; font-family: Roboto, 'Google Sans', Arial, sans-serif; font-weight: 300; border: 0px none #595959; background-color: #ffffff; line-height: 20px; color: #595959;">
                                                                                                                         <span
                                                                                                                             class="nl-dce-field nl-dce-done"
                                                                                                                             id="span158027781289629"
@@ -1002,7 +1019,7 @@
                                                                                             <tbody>
                                                                                                 <tr>
                                                                                                     <td style="border-collapse: collapse; width: 52px; padding-right: 5px;"
-                                                                                                        valign="middle">
+                                                                                                        class="day-vertical-align">
                                                                                                         <table
                                                                                                             align="left"
                                                                                                             border="0"
@@ -1032,8 +1049,8 @@
                                                                                                                 <tr
                                                                                                                     class="caDesc">
                                                                                                                     <td align="left"
-                                                                                                                        class="f-body-small c-medium f-w-light"
-                                                                                                                        style="border-collapse: collapse; margin: 0px; font-size: 16px; text-align: right; line-height: 20px; color: #595959; font-family: Roboto, 'Google Sans', Arial, sans-serif; font-weight: 300; border: 0px none #595959; background-color: #ffffff;">
+                                                                                                                        class="f-body-small c-medium f-w-light time-align"
+                                                                                                                        style="border-collapse: collapse; margin: 0px; font-size: 16px; line-height: 20px; color: #595959; font-family: Roboto, 'Google Sans', Arial, sans-serif; font-weight: 300; border: 0px none #595959; background-color: #ffffff;">
                                                                                                                         <span
                                                                                                                             class="nl-dce-field nl-dce-done"
                                                                                                                             id="span158027781289629"
@@ -1138,7 +1155,7 @@
                                                                                             <tbody>
                                                                                                 <tr>
                                                                                                     <td style="border-collapse: collapse; width: 52px; padding-right: 5px;"
-                                                                                                        valign="middle">
+                                                                                                        class="day-vertical-align">
                                                                                                         <table
                                                                                                             align="left"
                                                                                                             border="0"
@@ -1168,7 +1185,7 @@
                                                                                                                 <tr
                                                                                                                     class="caDesc">
                                                                                                                     <td align="left"
-                                                                                                                        class="f-body-small c-medium f-w-light"
+                                                                                                                        class="f-body-small c-medium f-w-light time-align"
                                                                                                                         style="border-collapse: collapse; margin: 0px; padding: 0px; font-size: 16px; line-height: 20px; color: #595959; font-family: Roboto, 'Google Sans', Arial, sans-serif; font-weight: 300; border: 0px none #595959; background-color: #ffffff;">
                                                                                                                     </td>
                                                                                                                 </tr>
@@ -1274,7 +1291,7 @@
                                                                                             <tbody>
                                                                                                 <tr>
                                                                                                     <td style="border-collapse: collapse; width: 52px; padding-right: 5px;"
-                                                                                                        valign="middle">
+                                                                                                        class="day-vertical-align">
                                                                                                         <table
                                                                                                             align="left"
                                                                                                             border="0"
@@ -1304,7 +1321,7 @@
                                                                                                                 <tr
                                                                                                                     class="caDesc">
                                                                                                                     <td align="left"
-                                                                                                                        class="f-body-small c-medium f-w-light"
+                                                                                                                        class="f-body-small c-medium f-w-light time-align"
                                                                                                                         style="border-collapse: collapse; margin: 0px; padding: 0px; font-size: 16px; line-height: 20px; color: #595959; font-family: Roboto, 'Google Sans', Arial, sans-serif; font-weight: 300; border: 0px none #595959; background-color: #ffffff;">
                                                                                                                     </td>
                                                                                                                 </tr>
@@ -1408,7 +1425,7 @@
                                                                                             <tbody>
                                                                                                 <tr>
                                                                                                     <td style="border-collapse: collapse; width: 52px; padding-right: 5px;"
-                                                                                                        valign="middle">
+                                                                                                        class="day-vertical-align">
                                                                                                         <table
                                                                                                             align="left"
                                                                                                             border="0"
@@ -1439,8 +1456,8 @@
                                                                                                                 <tr
                                                                                                                     class="caDesc">
                                                                                                                     <td align="left"
-                                                                                                                        class="f-body-small c-medium f-w-light"
-                                                                                                                        style="border-collapse: collapse; margin: 0px; font-size: 16px; text-align: right; line-height: 20px; color: #595959; font-family: Roboto, Google Sans, Arial, sans-serif; font-weight: 300;">
+                                                                                                                        class="f-body-small c-medium f-w-light time-align"
+                                                                                                                        style="border-collapse: collapse; margin: 0px; font-size: 16px; line-height: 20px; color: #595959; font-family: Roboto, Google Sans, Arial, sans-serif; font-weight: 300;">
                                                                                                                         <span
                                                                                                                             class="nl-dce-field nl-dce-done"
                                                                                                                             id="span15802833856560"
@@ -1556,7 +1573,7 @@
                                                                                             <tbody>
                                                                                                 <tr>
                                                                                                     <td style="border-collapse: collapse; width: 52px; padding-right: 5px;"
-                                                                                                        valign="middle">
+                                                                                                        class="day-vertical-align">
                                                                                                         <table
                                                                                                             align="left"
                                                                                                             border="0"
@@ -1587,8 +1604,8 @@
                                                                                                                 <tr
                                                                                                                     class="caDesc">
                                                                                                                     <td align="left"
-                                                                                                                        class="f-body-small c-medium f-w-light"
-                                                                                                                        style="border-collapse: collapse; margin: 0px; font-size: 16px; text-align: right; line-height: 20px; color: #595959; font-family: Roboto, Google Sans, Arial, sans-serif; font-weight: 300;">
+                                                                                                                        class="f-body-small c-medium f-w-light time-align"
+                                                                                                                        style="border-collapse: collapse; margin: 0px; font-size: 16px; line-height: 20px; color: #595959; font-family: Roboto, Google Sans, Arial, sans-serif; font-weight: 300;">
                                                                                                                         <span
                                                                                                                             class="nl-dce-field nl-dce-done"
                                                                                                                             id="span15802833856560"
@@ -1695,7 +1712,7 @@
                                                                                             <tbody>
                                                                                                 <tr>
                                                                                                     <td style="border-collapse: collapse; width: 52px; padding-right: 5px;"
-                                                                                                        valign="middle">
+                                                                                                        class="day-vertical-align">
                                                                                                         <table
                                                                                                             align="left"
                                                                                                             border="0"
@@ -1726,7 +1743,7 @@
                                                                                                                 <tr
                                                                                                                     class="caDesc">
                                                                                                                     <td align="left"
-                                                                                                                        class="f-body-small c-medium f-w-light"
+                                                                                                                        class="f-body-small c-medium f-w-light time-align"
                                                                                                                         style="border-collapse: collapse; margin: 0px; padding: 0px; font-size: 16px; line-height: 20px; color: #595959; font-family: Roboto, 'Google Sans', Arial, sans-serif; font-weight: 300; border: 0px none #595959; background-color: #ffffff;">
                                                                                                                     </td>
                                                                                                                 </tr>
@@ -1833,7 +1850,7 @@
                                                                                             <tbody>
                                                                                                 <tr>
                                                                                                     <td style="border-collapse: collapse; width: 52px; padding-right: 5px;"
-                                                                                                        valign="middle">
+                                                                                                        class="day-vertical-align">
                                                                                                         <table
                                                                                                             align="left"
                                                                                                             border="0"
@@ -1863,7 +1880,7 @@
                                                                                                                 <tr
                                                                                                                     class="caDesc">
                                                                                                                     <td align="left"
-                                                                                                                        class="f-body-small c-medium f-w-light"
+                                                                                                                        class="f-body-small c-medium f-w-light time-align"
                                                                                                                         style="border-collapse: collapse; margin: 0px; padding: 0px;">
                                                                                                                     </td>
                                                                                                                 </tr>
@@ -1958,7 +1975,7 @@
                                                                                                 <tbody>
                                                                                                     <tr>
                                                                                                         <td style="border-collapse: collapse; width: 52px; padding-right: 5px;"
-                                                                                                            valign="middle">
+                                                                                                            class="day-vertical-align">
                                                                                                             <table
                                                                                                                 align="left"
                                                                                                                 border="0"
@@ -1988,8 +2005,8 @@
                                                                                                                     <tr
                                                                                                                         class="caDesc">
                                                                                                                         <td align="left"
-                                                                                                                            class="f-body-small c-medium f-w-light"
-                                                                                                                            style="border-collapse: collapse; margin: 0px; font-size: 16px; text-align: right; line-height: 20px; color: #595959; font-family: Roboto, 'Google Sans', Arial, sans-serif; font-weight: 300; border: 0px none #595959; background-color: #ffffff;">
+                                                                                                                            class="f-body-small c-medium f-w-light time-align"
+                                                                                                                            style="border-collapse: collapse; margin: 0px; font-size: 16px; line-height: 20px; color: #595959; font-family: Roboto, 'Google Sans', Arial, sans-serif; font-weight: 300; border: 0px none #595959; background-color: #ffffff;">
                                                                                                                             <span
                                                                                                                                 class="nl-dce-field nl-dce-done"
                                                                                                                                 id="span158028505945437"
@@ -2104,7 +2121,7 @@
                                                                                             <tbody>
                                                                                                 <tr>
                                                                                                     <td style="border-collapse: collapse; width: 52px; padding-right: 5px;"
-                                                                                                        valign="middle">
+                                                                                                        class="day-vertical-align">
                                                                                                         <table
                                                                                                             align="left"
                                                                                                             border="0"
@@ -2134,8 +2151,8 @@
                                                                                                                 <tr
                                                                                                                     class="caDesc">
                                                                                                                     <td align="left"
-                                                                                                                        class="f-body-small c-medium f-w-light"
-                                                                                                                        style="border-collapse: collapse; margin: 0px; font-size: 16px; text-align: right; line-height: 20px; color: #595959; font-family: Roboto, 'Google Sans', Arial, sans-serif; font-weight: 300; border: 0px none #595959; background-color: #ffffff;">
+                                                                                                                        class="f-body-small c-medium f-w-light time-align"
+                                                                                                                        style="border-collapse: collapse; margin: 0px; font-size: 16px; line-height: 20px; color: #595959; font-family: Roboto, 'Google Sans', Arial, sans-serif; font-weight: 300; border: 0px none #595959; background-color: #ffffff;">
                                                                                                                         <span
                                                                                                                             class="nl-dce-field nl-dce-done"
                                                                                                                             id="span158028505945437"
@@ -2241,7 +2258,7 @@
                                                                                             <tbody>
                                                                                                 <tr>
                                                                                                     <td style="border-collapse: collapse; width: 52px; padding-right: 5px;"
-                                                                                                        valign="middle">
+                                                                                                        class="day-vertical-align">
                                                                                                         <table
                                                                                                             align="left"
                                                                                                             border="0"
@@ -2271,7 +2288,7 @@
                                                                                                                 <tr
                                                                                                                     class="caDesc">
                                                                                                                     <td align="left"
-                                                                                                                        class="f-body-small c-medium f-w-light"
+                                                                                                                        class="f-body-small c-medium f-w-light time-align"
                                                                                                                         style="border-collapse: collapse; margin: 0px; padding: 0px; font-size: 16px; line-height: 20px; color: #595959; font-family: Roboto, 'Google Sans', Arial, sans-serif; font-weight: 300; border: 0px none #595959; background-color: #ffffff;">
                                                                                                                     </td>
                                                                                                                 </tr>
@@ -2380,7 +2397,7 @@
                                                                                             <tbody>
                                                                                                 <tr>
                                                                                                     <td style="border-collapse: collapse; width: 52px; padding-right: 5px;"
-                                                                                                        valign="middle">
+                                                                                                        class="day-vertical-align">
                                                                                                         <table
                                                                                                             align="left"
                                                                                                             border="0"
@@ -2410,7 +2427,7 @@
                                                                                                                 <tr
                                                                                                                     class="caDesc">
                                                                                                                     <td align="left"
-                                                                                                                        class="f-body-small c-medium f-w-light"
+                                                                                                                        class="f-body-small c-medium f-w-light time-align"
                                                                                                                         style="border-collapse: collapse; margin: 0px; padding: 0px;">
                                                                                                                     </td>
                                                                                                                 </tr>
@@ -2502,7 +2519,7 @@
                                                                                             <tbody>
                                                                                                 <tr>
                                                                                                     <td style="border-collapse: collapse; width: 52px; padding-right: 5px;"
-                                                                                                        valign="middle">
+                                                                                                        class="day-vertical-align">
                                                                                                         <table
                                                                                                             align="left"
                                                                                                             border="0"
@@ -2532,8 +2549,8 @@
                                                                                                                 <tr
                                                                                                                     class="caDesc">
                                                                                                                     <td align="left"
-                                                                                                                        class="f-body-small c-medium f-w-light"
-                                                                                                                        style="border-collapse: collapse; margin: 0px; font-size: 16px; text-align: right; line-height: 20px; color: #595959; font-family: Roboto, Google Sans, Arial, sans-serif; font-weight: 300;">
+                                                                                                                        class="f-body-small c-medium f-w-light time-align"
+                                                                                                                        style="border-collapse: collapse; margin: 0px; font-size: 16px; line-height: 20px; color: #595959; font-family: Roboto, Google Sans, Arial, sans-serif; font-weight: 300;">
                                                                                                                         <span
                                                                                                                             class="nl-dce-field nl-dce-done"
                                                                                                                             id="span15802802029851"
@@ -2648,7 +2665,7 @@
                                                                                             <tbody>
                                                                                                 <tr>
                                                                                                     <td style="border-collapse: collapse; width: 52px; padding-right: 5px;"
-                                                                                                        valign="middle">
+                                                                                                        class="day-vertical-align">
                                                                                                         <table
                                                                                                             align="left"
                                                                                                             border="0"
@@ -2678,8 +2695,8 @@
                                                                                                                 <tr
                                                                                                                     class="caDesc">
                                                                                                                     <td align="left"
-                                                                                                                        class="f-body-small c-medium f-w-light"
-                                                                                                                        style="border-collapse: collapse; margin: 0px; font-size: 16px; text-align: right; line-height: 20px; color: #595959; font-family: Roboto, Google Sans, Arial, sans-serif; font-weight: 300;">
+                                                                                                                        class="f-body-small c-medium f-w-light time-align"
+                                                                                                                        style="border-collapse: collapse; margin: 0px; font-size: 16px; line-height: 20px; color: #595959; font-family: Roboto, Google Sans, Arial, sans-serif; font-weight: 300;">
                                                                                                                         <span
                                                                                                                             class="nl-dce-field nl-dce-done"
                                                                                                                             id="span15802802029851"
@@ -2785,7 +2802,7 @@
                                                                                             <tbody>
                                                                                                 <tr>
                                                                                                     <td style="border-collapse: collapse; width: 52px; padding-right: 5px;"
-                                                                                                        valign="middle">
+                                                                                                        class="day-vertical-align">
                                                                                                         <table
                                                                                                             align="left"
                                                                                                             border="0"
@@ -2815,7 +2832,7 @@
                                                                                                                 <tr
                                                                                                                     class="caDesc">
                                                                                                                     <td align="left"
-                                                                                                                        class="f-body-small c-medium f-w-light"
+                                                                                                                        class="f-body-small c-medium f-w-light time-align"
                                                                                                                         style="border-collapse: collapse; margin: 0px; padding: 0px; font-size: 16px; line-height: 20px; color: #595959; font-family: Roboto, Google Sans, Arial, sans-serif; font-weight: 300;">
                                                                                                                     </td>
                                                                                                                 </tr>
@@ -2925,7 +2942,7 @@
                                                                                             <tbody>
                                                                                                 <tr>
                                                                                                     <td style="border-collapse: collapse; width: 52px; padding-right: 5px;"
-                                                                                                        valign="middle">
+                                                                                                        class="day-vertical-align">
                                                                                                         <table
                                                                                                             align="left"
                                                                                                             border="0"
@@ -2955,7 +2972,7 @@
                                                                                                                 <tr
                                                                                                                     class="caDesc">
                                                                                                                     <td align="left"
-                                                                                                                        class="f-body-small c-medium f-w-light"
+                                                                                                                        class="f-body-small c-medium f-w-light time-align"
                                                                                                                         style="border-collapse: collapse; margin: 0px; padding: 0px;">
                                                                                                                     </td>
                                                                                                                 </tr>
@@ -3056,7 +3073,7 @@
                                                                                             <tbody>
                                                                                                 <tr>
                                                                                                     <td style="border-collapse: collapse; width: 52px; padding-right: 5px;"
-                                                                                                        valign="middle">
+                                                                                                        class="day-vertical-align">
                                                                                                         <table
                                                                                                             align="left"
                                                                                                             border="0"
@@ -3087,8 +3104,8 @@
                                                                                                                 <tr
                                                                                                                     class="caDesc">
                                                                                                                     <td align="left"
-                                                                                                                        class="f-body-small c-medium f-w-light"
-                                                                                                                        style="border-collapse: collapse; margin: 0px; font-size: 16px; text-align: right; line-height: 20px; color: #595959; font-family: Roboto, 'Google Sans', Arial, sans-serif; font-weight: 300; border: 0px none #595959; background-color: #ffffff;">
+                                                                                                                        class="f-body-small c-medium f-w-light time-align"
+                                                                                                                        style="border-collapse: collapse; margin: 0px; font-size: 16px; line-height: 20px; color: #595959; font-family: Roboto, 'Google Sans', Arial, sans-serif; font-weight: 300; border: 0px none #595959; background-color: #ffffff;">
                                                                                                                         <span
                                                                                                                             class="nl-dce-field nl-dce-done"
                                                                                                                             id="span158028413937073"
@@ -3203,7 +3220,7 @@
                                                                                             <tbody>
                                                                                                 <tr>
                                                                                                     <td style="border-collapse: collapse; width: 52px; padding-right: 5px;"
-                                                                                                        valign="middle">
+                                                                                                        class="day-vertical-align">
                                                                                                         <table
                                                                                                             align="left"
                                                                                                             border="0"
@@ -3234,8 +3251,8 @@
                                                                                                                 <tr
                                                                                                                     class="caDesc">
                                                                                                                     <td align="left"
-                                                                                                                        class="f-body-small c-medium f-w-light"
-                                                                                                                        style="border-collapse: collapse; margin: 0px; font-size: 16px; text-align: right; line-height: 20px; color: #595959; font-family: Roboto, 'Google Sans', Arial, sans-serif; font-weight: 300; border: 0px none #595959; background-color: #ffffff;">
+                                                                                                                        class="f-body-small c-medium f-w-light time-align"
+                                                                                                                        style="border-collapse: collapse; margin: 0px; font-size: 16px; line-height: 20px; color: #595959; font-family: Roboto, 'Google Sans', Arial, sans-serif; font-weight: 300; border: 0px none #595959; background-color: #ffffff;">
                                                                                                                         <span
                                                                                                                             class="nl-dce-field nl-dce-done"
                                                                                                                             id="span158028413937073"
@@ -3341,7 +3358,7 @@
                                                                                             <tbody>
                                                                                                 <tr>
                                                                                                     <td style="border-collapse: collapse; width: 52px; padding-right: 5px;"
-                                                                                                        valign="middle">
+                                                                                                        class="day-vertical-align">
                                                                                                         <table
                                                                                                             align="left"
                                                                                                             border="0"
@@ -3372,7 +3389,7 @@
                                                                                                                 <tr
                                                                                                                     class="caDesc">
                                                                                                                     <td align="left"
-                                                                                                                        class="f-body-small c-medium f-w-light"
+                                                                                                                        class="f-body-small c-medium f-w-light time-align"
                                                                                                                         style="border-collapse: collapse; margin: 0px; padding: 0px; font-size: 16px; line-height: 20px; color: #595959; font-family: Roboto, 'Google Sans', Arial, sans-serif; font-weight: 300; border: 0px none #595959; background-color: #ffffff;">
                                                                                                                     </td>
                                                                                                                 </tr>
@@ -3479,7 +3496,7 @@
                                                                                             <tbody>
                                                                                                 <tr>
                                                                                                     <td style="border-collapse: collapse; width: 52px; padding-right: 5px;"
-                                                                                                        valign="middle">
+                                                                                                        class="day-vertical-align">
                                                                                                         <table
                                                                                                             align="left"
                                                                                                             border="0"
@@ -3509,7 +3526,7 @@
                                                                                                                 <tr
                                                                                                                     class="caDesc">
                                                                                                                     <td align="left"
-                                                                                                                        class="f-body-small c-medium f-w-light"
+                                                                                                                        class="f-body-small c-medium f-w-light time-align"
                                                                                                                         style="border-collapse: collapse; margin: 0px; padding: 0px;">
                                                                                                                     </td>
                                                                                                                 </tr>
@@ -3600,7 +3617,7 @@
                                                                                             <tbody>
                                                                                                 <tr>
                                                                                                     <td style="border-collapse: collapse; width: 52px; padding-right: 5px;"
-                                                                                                        valign="middle">
+                                                                                                        class="day-vertical-align">
                                                                                                         <table
                                                                                                             align="left"
                                                                                                             border="0"
@@ -3630,8 +3647,8 @@
                                                                                                                 <tr
                                                                                                                     class="caDesc">
                                                                                                                     <td align="left"
-                                                                                                                        class="f-body-small c-medium f-w-light"
-                                                                                                                        style="border-collapse: collapse; margin: 0px; font-size: 16px; text-align: right; line-height: 20px; color: #595959; font-family: Roboto, Google Sans, Arial, sans-serif; font-weight: 300;">
+                                                                                                                        class="f-body-small c-medium f-w-light time-align"
+                                                                                                                        style="border-collapse: collapse; margin: 0px; font-size: 16px; line-height: 20px; color: #595959; font-family: Roboto, Google Sans, Arial, sans-serif; font-weight: 300;">
                                                                                                                         <span
                                                                                                                             class="nl-dce-field nl-dce-done"
                                                                                                                             id="span158028544321897"
@@ -3744,7 +3761,7 @@
                                                                                             <tbody>
                                                                                                 <tr>
                                                                                                     <td style="border-collapse: collapse; width: 52px; padding-right: 5px;"
-                                                                                                        valign="middle">
+                                                                                                        class="day-vertical-align">
                                                                                                         <table
                                                                                                             align="left"
                                                                                                             border="0"
@@ -3774,8 +3791,8 @@
                                                                                                                 <tr
                                                                                                                     class="caDesc">
                                                                                                                     <td align="left"
-                                                                                                                        class="f-body-small c-medium f-w-light"
-                                                                                                                        style="border-collapse: collapse; margin: 0px; font-size: 16px; text-align: right; line-height: 20px; color: #595959; font-family: Roboto, Google Sans, Arial, sans-serif; font-weight: 300;">
+                                                                                                                        class="f-body-small c-medium f-w-light time-align"
+                                                                                                                        style="border-collapse: collapse; margin: 0px; font-size: 16px; line-height: 20px; color: #595959; font-family: Roboto, Google Sans, Arial, sans-serif; font-weight: 300;">
                                                                                                                         <span
                                                                                                                             class="nl-dce-field nl-dce-done"
                                                                                                                             id="span158028544321897"
@@ -3880,7 +3897,7 @@
                                                                                             <tbody>
                                                                                                 <tr>
                                                                                                     <td style="border-collapse: collapse; width: 52px; padding-right: 5px;"
-                                                                                                        valign="middle">
+                                                                                                        class="day-vertical-align">
                                                                                                         <table
                                                                                                             align="left"
                                                                                                             border="0"
@@ -3910,7 +3927,7 @@
                                                                                                                 <tr
                                                                                                                     class="caDesc">
                                                                                                                     <td align="left"
-                                                                                                                        class="f-body-small c-medium f-w-light"
+                                                                                                                        class="f-body-small c-medium f-w-light time-align"
                                                                                                                         style="border-collapse: collapse; margin: 0px; padding: 0px; font-size: 16px; line-height: 20px; color: #595959; font-family: Roboto, 'Google Sans', Arial, sans-serif; font-weight: 300; border: 0px none #595959; background-color: #ffffff;">
                                                                                                                     </td>
                                                                                                                 </tr>
@@ -4016,7 +4033,7 @@
                                                                                             <tbody>
                                                                                                 <tr>
                                                                                                     <td style="border-collapse: collapse; width: 52px; padding-right: 5px;"
-                                                                                                        valign="middle">
+                                                                                                        class="day-vertical-align">
                                                                                                         <table
                                                                                                             align="left"
                                                                                                             border="0"
@@ -4046,7 +4063,7 @@
                                                                                                                 <tr
                                                                                                                     class="caDesc">
                                                                                                                     <td align="left"
-                                                                                                                        class="f-body-small c-medium f-w-light"
+                                                                                                                        class="f-body-small c-medium f-w-light time-align"
                                                                                                                         style="border-collapse: collapse; margin: 0px;">
                                                                                                                     </td>
                                                                                                                 </tr>
@@ -4138,7 +4155,7 @@
                                                                                             <tbody>
                                                                                                 <tr>
                                                                                                     <td style="border-collapse: collapse; width: 52px; padding-right: 5px;"
-                                                                                                        valign="middle">
+                                                                                                        class="day-vertical-align">
                                                                                                         <table
                                                                                                             align="left"
                                                                                                             border="0"
@@ -4168,8 +4185,8 @@
                                                                                                                 <tr
                                                                                                                     class="caDesc">
                                                                                                                     <td align="left"
-                                                                                                                        class="f-body-small c-medium f-w-light"
-                                                                                                                        style="border-collapse: collapse; margin: 0px; font-size: 16px; text-align: right; line-height: 20px; color: #595959; font-family: Roboto, Google Sans, Arial, sans-serif; font-weight: 300;">
+                                                                                                                        class="f-body-small c-medium f-w-light time-align"
+                                                                                                                        style="border-collapse: collapse; margin: 0px; font-size: 16px; line-height: 20px; color: #595959; font-family: Roboto, Google Sans, Arial, sans-serif; font-weight: 300;">
                                                                                                                         <span
                                                                                                                             class="nl-dce-field nl-dce-done"
                                                                                                                             id="span158028146535698"
@@ -4283,7 +4300,7 @@
                                                                                             <tbody>
                                                                                                 <tr>
                                                                                                     <td style="border-collapse: collapse; width: 52px; padding-right: 5px;"
-                                                                                                        valign="middle">
+                                                                                                        class="day-vertical-align">
                                                                                                         <table
                                                                                                             align="left"
                                                                                                             border="0"
@@ -4313,8 +4330,8 @@
                                                                                                                 <tr
                                                                                                                     class="caDesc">
                                                                                                                     <td align="left"
-                                                                                                                        class="f-body-small c-medium f-w-light"
-                                                                                                                        style="border-collapse: collapse; margin: 0px; font-size: 16px; text-align: right; line-height: 20px; color: #595959; font-family: Roboto, Google Sans, Arial, sans-serif; font-weight: 300;">
+                                                                                                                        class="f-body-small c-medium f-w-light time-align"
+                                                                                                                        style="border-collapse: collapse; margin: 0px; font-size: 16px; line-height: 20px; color: #595959; font-family: Roboto, Google Sans, Arial, sans-serif; font-weight: 300;">
                                                                                                                         <span
                                                                                                                             class="nl-dce-field nl-dce-done"
                                                                                                                             id="span158028146535698"
@@ -4420,7 +4437,7 @@
                                                                                             <tbody>
                                                                                                 <tr>
                                                                                                     <td style="border-collapse: collapse; width: 52px; padding-right: 5px;"
-                                                                                                        valign="middle">
+                                                                                                        class="day-vertical-align">
                                                                                                         <table
                                                                                                             align="left"
                                                                                                             border="0"
@@ -4450,7 +4467,7 @@
                                                                                                                 <tr
                                                                                                                     class="caDesc">
                                                                                                                     <td align="left"
-                                                                                                                        class="f-body-small c-medium f-w-light"
+                                                                                                                        class="f-body-small c-medium f-w-light time-align"
                                                                                                                         style="border-collapse: collapse; margin: 0px; padding: 0px; font-size: 16px; line-height: 20px; color: #595959; font-family: Roboto, 'Google Sans', Arial, sans-serif; font-weight: 300; border: 0px none #595959; background-color: #ffffff;">
                                                                                                                     </td>
                                                                                                                 </tr>
@@ -4559,7 +4576,7 @@
                                                                                             <tbody>
                                                                                                 <tr>
                                                                                                     <td style="border-collapse: collapse; width: 52px; padding-right: 5px;"
-                                                                                                        valign="middle">
+                                                                                                        class="day-vertical-align">
                                                                                                         <table
                                                                                                             align="left"
                                                                                                             border="0"
@@ -4589,7 +4606,7 @@
                                                                                                                 <tr
                                                                                                                     class="caDesc">
                                                                                                                     <td align="left"
-                                                                                                                        class="f-body-small c-medium f-w-light"
+                                                                                                                        class="f-body-small c-medium f-w-light time-align"
                                                                                                                         style="border-collapse: collapse; margin: 0px; padding: 0px;">
                                                                                                                     </td>
                                                                                                                 </tr>
@@ -4683,7 +4700,7 @@
                                                                             <tbody>
                                                                                 <tr>
                                                                                     <td style="border-collapse: collapse; width: 52px; padding-right: 5px;"
-                                                                                        valign="middle">
+                                                                                        class="day-vertical-align">
                                                                                         <table align="left" border="0"
                                                                                             role="presentation"
                                                                                             style="border-spacing: 0; margin: 0 auto; table-layout: auto;"
@@ -4710,8 +4727,8 @@
                                                                                             <tbody>
                                                                                                 <tr class="caDesc">
                                                                                                     <td align="left"
-                                                                                                        class="f-body-small c-medium f-w-light"
-                                                                                                        style="border-collapse: collapse; margin: 0px; font-size: 16px; text-align: right; line-height: 20px; color: #595959; font-family: Roboto, Google Sans, Arial, sans-serif; font-weight: 300;">
+                                                                                                        class="f-body-small c-medium f-w-light time-align"
+                                                                                                        style="border-collapse: collapse; margin: 0px; font-size: 16px; line-height: 20px; color: #595959; font-family: Roboto, Google Sans, Arial, sans-serif; font-weight: 300;">
                                                                                                         11 AM</td>
                                                                                                 </tr>
                                                                                             </tbody>
@@ -4757,7 +4774,7 @@
                                                                             <tbody>
                                                                                 <tr>
                                                                                     <td style="border-collapse: collapse; width: 52px; padding-right: 5px;"
-                                                                                        valign="middle">
+                                                                                        class="day-vertical-align">
                                                                                         <table align="left" border="0"
                                                                                             role="presentation"
                                                                                             style="border-spacing: 0; margin: 0 auto; table-layout: auto;"
@@ -4784,8 +4801,8 @@
                                                                                             <tbody>
                                                                                                 <tr class="caDesc">
                                                                                                     <td align="left"
-                                                                                                        class="f-body-small c-medium f-w-light"
-                                                                                                        style="border-collapse: collapse; margin: 0px; font-size: 16px; text-align: right; line-height: 20px; color: #595959; font-family: Roboto, Google Sans, Arial, sans-serif; font-weight: 300;">
+                                                                                                        class="f-body-small c-medium f-w-light time-align"
+                                                                                                        style="border-collapse: collapse; margin: 0px; font-size: 16px; line-height: 20px; color: #595959; font-family: Roboto, Google Sans, Arial, sans-serif; font-weight: 300;">
                                                                                                         11 AM</td>
                                                                                                 </tr>
                                                                                             </tbody>
@@ -4831,7 +4848,7 @@
                                                                             <tbody>
                                                                                 <tr>
                                                                                     <td style="border-collapse: collapse; width: 52px; padding-right: 5px;"
-                                                                                        valign="middle">
+                                                                                        class="day-vertical-align">
                                                                                         <table align="left" border="0"
                                                                                             role="presentation"
                                                                                             style="border-spacing: 0; margin: 0 auto; table-layout: auto;"
@@ -4858,7 +4875,7 @@
                                                                                             <tbody>
                                                                                                 <tr class="caDesc">
                                                                                                     <td align="left"
-                                                                                                        class="f-body-small c-medium f-w-light"
+                                                                                                        class="f-body-small c-medium f-w-light time-align"
                                                                                                         style="border-collapse: collapse; margin: 0px; padding: 0px; font-size: 16px; line-height: 20px; color: #595959; font-family: Roboto, Google Sans, Arial, sans-serif; font-weight: 300;">
                                                                                                     </td>
                                                                                                 </tr>
@@ -4930,7 +4947,7 @@
                                                                             <tbody>
                                                                                 <tr>
                                                                                     <td style="border-collapse: collapse; width: 52px; padding-right: 5px;"
-                                                                                        valign="middle">
+                                                                                        class="day-vertical-align">
                                                                                         <table align="left" border="0"
                                                                                             role="presentation"
                                                                                             style="border-spacing: 0; margin: 0 auto; table-layout: auto;"
@@ -4957,8 +4974,8 @@
                                                                                             <tbody>
                                                                                                 <tr class="caDesc">
                                                                                                     <td align="left"
-                                                                                                        class="f-body-small c-medium f-w-light"
-                                                                                                        style="border-collapse: collapse; margin: 0px; font-size: 16px; text-align: right; line-height: 20px; color: #595959; font-family: Roboto, Google Sans, Arial, sans-serif; font-weight: 300;">
+                                                                                                        class="f-body-small c-medium f-w-light time-align"
+                                                                                                        style="border-collapse: collapse; margin: 0px; font-size: 16px; line-height: 20px; color: #595959; font-family: Roboto, Google Sans, Arial, sans-serif; font-weight: 300;">
                                                                                                         11 AM</td>
                                                                                                 </tr>
                                                                                             </tbody>
